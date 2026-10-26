@@ -9,6 +9,11 @@ public class PageViewFactory : IPageViewFactory
 {
     public ViewModelBase LoadPageViewModel(PageViewEnum page)
     {
-        throw new NotImplementedException();
+        return page switch
+        {
+            PageViewEnum.Home => new HomeViewModel(),
+            PageViewEnum.Courses => new CourseViewModel(),
+            _ => throw new InvalidOperationException("Det fanns inte de du ville ha")
+        };
     }
 }
