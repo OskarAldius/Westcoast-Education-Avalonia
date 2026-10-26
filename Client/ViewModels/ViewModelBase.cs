@@ -1,8 +1,10 @@
 using System;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Client.ViewModels;
 
-public class ViewModelBase
+public partial class ViewModelBase : ObservableObject
 {
-
+    [ObservableProperty]
+    public partial string PageTitle { get; set; } = "";
 }
