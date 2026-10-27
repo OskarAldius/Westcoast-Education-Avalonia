@@ -1,0 +1,82 @@
+[
+  {
+    "firstName": "Anna",
+    "lastName": "Svensson",
+    "phoneNumber": "070-123 45 67",
+    "address": "Storgatan 1",
+    "postcode": "411 38",
+    "city": "Göteborg"
+  },
+  {
+    "firstName": "Erik",
+    "lastName": "Johansson",
+    "phoneNumber": "073-234 56 78",
+    "address": "Drottninggatan 12",
+    "postcode": "111 51",
+    "city": "Stockholm"
+  },
+  {
+    "firstName": "Maria",
+    "lastName": "Lindberg",
+    "phoneNumber": "076-345 67 89",
+    "address": "Kungsgatan 25",
+    "postcode": "211 22",
+    "city": "Malmö"
+  },
+  {
+    "firstName": "Lars",
+    "lastName": "Andersson",
+    "phoneNumber": "070-456 78 90",
+    "address": "Björkvägen 7",
+    "postcode": "752 37",
+    "city": "Uppsala"
+  },
+  {
+    "firstName": "Sofia",
+    "lastName": "Karlsson",
+    "phoneNumber": "072-567 89 01",
+    "address": "Skolgatan 3",
+    "postcode": "582 23",
+    "city": "Linköping"
+  },
+  {
+    "firstName": "Johan",
+    "lastName": "Nilsson",
+    "phoneNumber": "073-678 90 12",
+    "address": "Parkvägen 18",
+    "postcode": "702 11",
+    "city": "Örebro"
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Eriksson",
+    "phoneNumber": "070-789 01 23",
+    "address": "Hamngatan 9",
+    "postcode": "852 31",
+    "city": "Sundsvall"
+  },
+  {
+    "firstName": "Oskar",
+    "lastName": "Larsson",
+    "phoneNumber": "076-890 12 34",
+    "address": "Industrivägen 4",
+    "postcode": "541 30",
+    "city": "Skövde"
+  },
+  {
+    "firstName": "Elin",
+    "lastName": "Olsson",
+    "phoneNumber": "072-901 23 45",
+    "address": "Älvgatan 15",
+    "postcode": "903 26",
+    "city": "Umeå"
+  },
+  {
+    "firstName": "Anders",
+    "lastName": "Persson",
+    "phoneNumber": "073-012 34 56",
+    "address": "Torggatan 21",
+    "postcode": "391 21",
+    "city": "Kalmar"
+  }
+]
