@@ -8,18 +8,24 @@ namespace Client.Services;
 
 public class StudentService : IStudentService
 {
-    public Task Add(Students students)
+    public async Task Add(Students students)
     {
-        throw new NotImplementedException();
+        var httpService = new HttpService<Students>();
+        await httpService.Post("students", students);
     }
 
-    public Task Delete(string id)
+    public async Task Delete(string id)
     {
-        throw new NotImplementedException();
+        var httpService = new HttpService<Students>();
+        await httpService.Delete("students", id);
     }
 
-    public Task<List<Students>> List()
+    public async Task<List<Students>> List()
     {
-        throw new NotImplementedException();
+        var httpService = new HttpService<Students>();
+        var students = await httpService.Get("students");
+
+        return students;
+
     }
 }
