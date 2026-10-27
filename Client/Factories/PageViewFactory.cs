@@ -13,6 +13,8 @@ public class PageViewFactory : IPageViewFactory
         {
             PageViewEnum.Home => new HomeViewModel(),
             PageViewEnum.Courses => new CourseViewModel(),
+            PageViewEnum.Students => new StudentViewModel(),
+            PageViewEnum.Teachers => new TeacherViewModel(),
             _ => throw new InvalidOperationException("Det fanns inte de du ville ha")
         };
     }
