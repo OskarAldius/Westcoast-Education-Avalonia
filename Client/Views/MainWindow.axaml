@@ -11,4 +11,7 @@
         <Design.DataContext>
             <vm:MainWindowViewModel></vm:MainWindowViewModel>
         </Design.DataContext>
+        <StackPanel Background="{DynamicResource PrimaryBackgroundGradient}">
+
+        </StackPanel>
 </Window>
