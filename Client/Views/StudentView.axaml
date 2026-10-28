@@ -12,7 +12,7 @@
              </Design.DataContext>
 
              <StackPanel>
-                <TextBlock Classes="pageTitlte" Text="Våra Studenter"/>
+                <TextBlock Classes="pageTitle" Text="{Binding PageTitle}"/>
 
                 <Border BorderBrush="White" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
                     <Grid ColumnDefinitions="100,100,200,100,100,100" ShowGridLines="True">

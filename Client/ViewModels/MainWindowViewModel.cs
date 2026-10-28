@@ -18,6 +18,10 @@ public partial class MainWindowViewModel : ViewModelBase
         _pageViewFactory = pageViewFactory;
         GoToHome();
     }
+    public MainWindowViewModel()
+    {
+        _pageViewFactory = new PageViewFactory();
+    }
 
     [RelayCommand]
     private void GoToHome() => CurrentView = _pageViewFactory.LoadPageViewModel(Enums.PageViewEnum.Home);
