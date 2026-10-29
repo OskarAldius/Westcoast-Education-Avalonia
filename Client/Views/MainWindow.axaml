@@ -15,7 +15,7 @@
             
 
 
-       <Grid ColumnDefinitions="Auto,*" Background="{DynamicResource BackgroundColor}">
+       <Grid ColumnDefinitions="Auto,*" Background="{DynamicResource PrimaryBackgroundColor}">
         <Border Padding="10" Background="{DynamicResource PrimaryBackgroundGradient}">
             <Grid RowDefinitions="*,Auto">
                    
@@ -35,7 +35,7 @@
                 
             </Grid>
          </Border>
-         
+         <ContentControl Grid.Column="1" Padding="20" Content="{Binding CurrentView}" />
         </Grid>
 
        

@@ -7,7 +7,8 @@
             <GradientStop Offset="0" Color="#0B333F"/>
             <GradientStop Offset="1" Color="#45828D"/>
         </LinearGradientBrush>
-
+<SolidColorBrush x:Key="BackgroundColor">#0b333f</SolidColorBrush>
+<SolidColorBrush x:Key="ForegroundColor">#A7BDCF</SolidColorBrush>
 
           <SolidColorBrush x:Key="PrimaryTextColor">#A7BDCF</SolidColorBrush>
         <SolidColorBrush x:Key="PrimaryBackgroundColor">#0b333f</SolidColorBrush>

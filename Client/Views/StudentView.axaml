@@ -15,7 +15,7 @@
                 <TextBlock Classes="pageTitle" Text="{Binding PageTitle}"/>
 
                 <Border BorderBrush="White" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
-                    <Grid ColumnDefinitions="100,100,200,100,100,100" ShowGridLines="True">
+                    <Grid ColumnDefinitions="*,*,1.5*,2*,*,*" ShowGridLines="True">
                         <Label Content="Namn" />
                         <Label Grid.Column="1" Content="Efternamn"/>
                         <Label Grid.Column="2" Content="Telefonnummer"/>
@@ -27,7 +27,7 @@
                 <ItemsControl ItemsSource="{Binding Students}" Margin="0 10 0 0">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Grid ColumnDefinitions="100,100,200,100,100,100" ShowGridLines="True">
+                            <Grid ColumnDefinitions="*,*,1.5*,2*,*,*" ShowGridLines="True">
                                 <Label Content="{Binding FirstName}"/>
                                 <Label Grid.Column="1" Content="{Binding LastName}"/>
                                 <Label Grid.Column="2" Content="{Binding PhoneNumber}"/>

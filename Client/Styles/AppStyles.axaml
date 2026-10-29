@@ -13,9 +13,14 @@
     <Setter Property="Margin" Value="0 0 0 40"/>
   </Style>
 
-   <Style Selector="Label">
+  <Style Selector="Label">
     <Setter Property="FontSize" Value="23"/>
-  </Style>
+    <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"/>
+</Style>
+
+<Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"/>
+</Style>
 
     <Style Selector="Label.form">
     <Setter Property="FontSize" Value="15"/>
