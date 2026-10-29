@@ -33,7 +33,7 @@
                     </Button>
                     <Button Classes="button" Command="{Binding GoToStudentsCommand}">
                         <StackPanel Spacing="20" Orientation="Horizontal">
-                            <Label Padding="0 6" />
+                            <Label Padding="0 6" FontFamily="{DynamicResource IconFont}" Content="&#xE73E;" />
                             <Label Content="Studenter" />
                         </StackPanel>
                     </Button>
