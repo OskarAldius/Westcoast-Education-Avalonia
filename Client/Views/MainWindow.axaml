@@ -27,7 +27,7 @@
                     
                     <Button Classes="button" Command="{Binding GoToHomeCommand}">
                         <StackPanel Spacing="20" Orientation="Horizontal">
-                            <Label Padding="0 6" />
+                            <Label Padding="0 6" FontFamily="{DynamicResource IconFont}" Content="&#xE2C6;" />
                             <Label Content="Home" />
                         </StackPanel>
                     </Button>

@@ -10,14 +10,15 @@
 
     <Application.Styles>
         <FluentTheme />
-        <StyleInclude Source="Styles/AppStyles.axaml"/>
-        <StyleInclude Source="Styles/ButtonStyles.axaml"/>
+        <StyleInclude Source="Appearance/Styles/AppStyles.axaml"/>
+        <StyleInclude Source="Appearance/Styles/ButtonStyles.axaml"/>
     </Application.Styles>
 
 <Application.Resources>
     <ResourceDictionary>
+        <FontFamily x:Key="IconFont">avares://Client/Appearance/Fonts/Phosphor.ttf#Phosphor</FontFamily>
         <ResourceDictionary.MergedDictionaries>
-            <ResourceInclude Source="/Styles/AppReasources.axaml"></ResourceInclude>
+            <ResourceInclude Source="/Appearance/Styles/AppReasources.axaml"></ResourceInclude>
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
 </Application.Resources>
