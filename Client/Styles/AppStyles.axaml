@@ -29,4 +29,10 @@
     <Setter Property="BorderBrush" Value="#21626F" />
     <Setter Property="BorderThickness" Value="1" />
   </Style>
+
+  <Style Selector="Window">
+    <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundGradient}" />
+</Style>
+
+
 </Styles>

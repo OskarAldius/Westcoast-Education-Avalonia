@@ -3,8 +3,22 @@
   <Design.PreviewWith>
     <Border Padding="20">
       <!-- Add Controls for Previewer Here -->
+       <Button Classes="button">
+          <StackPanel Orientation="Horizontal">
+            <Label Padding="0 5"/>
+            <Label FontSize="20" Content="Knapp"/>
+          </StackPanel>
+        </Button>
     </Border>
   </Design.PreviewWith>
 
   <!-- Add Styles Here -->
+   
+  <Style Selector="Button.button">
+    <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}" />
+    <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundColor}" />
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="Padding" Value="15 10"/>
+    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+  </Style>
 </Styles>

@@ -8,6 +8,7 @@
             <GradientStop Offset="1" Color="#45828D"/>
         </LinearGradientBrush>
 
-          <SolidColorBrush x:Key="PrimaryTextColor">#EAE8E8</SolidColorBrush>
-        <SolidColorBrush x:Key="PrimaryBackgroundColor">#04041F</SolidColorBrush>
+
+          <SolidColorBrush x:Key="PrimaryTextColor">#A7BDCF</SolidColorBrush>
+        <SolidColorBrush x:Key="PrimaryBackgroundColor">#0b333f</SolidColorBrush>
 </ResourceDictionary>
