@@ -5,5 +5,6 @@ public enum PageViewEnum
     Home,
     Students,
     Teachers,
-    Courses
+    Courses,
+    AddStudent
 }

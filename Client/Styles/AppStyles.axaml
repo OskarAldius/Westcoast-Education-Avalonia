@@ -30,7 +30,7 @@
   <Style Selector="TextBox">
     <Setter Property="MaxWidth" Value="300" />
     <Setter Property="MinWidth" Value="300" />
-    <Setter Property="Background" Value="Black" />
+    <Setter Property="Background" Value="#26858E" />
     <Setter Property="BorderBrush" Value="#21626F" />
     <Setter Property="BorderThickness" Value="1" />
   </Style>
