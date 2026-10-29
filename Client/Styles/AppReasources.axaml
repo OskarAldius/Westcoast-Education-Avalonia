@@ -10,6 +10,4 @@
 <SolidColorBrush x:Key="BackgroundColor">#0b333f</SolidColorBrush>
 <SolidColorBrush x:Key="ForegroundColor">#A7BDCF</SolidColorBrush>
 
-          <SolidColorBrush x:Key="PrimaryTextColor">#A7BDCF</SolidColorBrush>
-        <SolidColorBrush x:Key="PrimaryBackgroundColor">#0b333f</SolidColorBrush>
 </ResourceDictionary>

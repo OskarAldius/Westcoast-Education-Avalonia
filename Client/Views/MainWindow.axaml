@@ -15,7 +15,7 @@
             
 
 
-       <Grid ColumnDefinitions="Auto,*" Background="{DynamicResource PrimaryBackgroundColor}">
+       <Grid ColumnDefinitions="Auto,*" Background="{DynamicResource BackgroundColor}">
         <Border Padding="10" Background="{DynamicResource PrimaryBackgroundGradient}">
             <Grid RowDefinitions="*,Auto">
                    
