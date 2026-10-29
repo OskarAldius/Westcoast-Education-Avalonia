@@ -24,7 +24,13 @@
                     <StackPanel Orientation="Horizontal" Spacing="20">
                         <TextBlock VerticalAlignment="Center" Text="Westcoast Education" FontSize="20" Foreground="{DynamicResource ForegroundColor}" />
                     </StackPanel>
-
+                    
+                    <Button Classes="button" Command="{Binding GoToHomeCommand}">
+                        <StackPanel Spacing="20" Orientation="Horizontal">
+                            <Label Padding="0 6" />
+                            <Label Content="Home" />
+                        </StackPanel>
+                    </Button>
                     <Button Classes="button" Command="{Binding GoToStudentsCommand}">
                         <StackPanel Spacing="20" Orientation="Horizontal">
                             <Label Padding="0 6" />
