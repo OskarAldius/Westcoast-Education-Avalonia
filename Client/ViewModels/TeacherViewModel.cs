@@ -14,7 +14,7 @@ public partial class TeacherViewModel : ViewModelBase
 {
     private readonly ITeacherService _teacherService;
     [ObservableProperty]
-    private partial ObservableCollection<Teachers> Teachers { get; set; } = [];
+    public partial ObservableCollection<Teachers> Teachers { get; set; } = [];
 
     public TeacherViewModel()
     {
