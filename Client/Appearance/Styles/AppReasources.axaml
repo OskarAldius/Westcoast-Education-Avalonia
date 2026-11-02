@@ -9,5 +9,6 @@
         </LinearGradientBrush>
 <SolidColorBrush x:Key="BackgroundColor">#0b333f</SolidColorBrush>
 <SolidColorBrush x:Key="ForegroundColor">#A7BDCF</SolidColorBrush>
-
+<SolidColorBrush x:Key="ChangeBrush">#1D8A3C</SolidColorBrush>
+<SolidColorBrush x:Key="DeleteBrush">#BC2214</SolidColorBrush>
 </ResourceDictionary>

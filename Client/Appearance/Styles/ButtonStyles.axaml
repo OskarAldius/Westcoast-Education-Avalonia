@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <Design.PreviewWith>
     <Border Padding="20">
+      <StackPanel>
       <!-- Add Controls for Previewer Here -->
        <Button Classes="button">
           <StackPanel Orientation="Horizontal">
@@ -9,6 +10,21 @@
             <Label FontSize="20" Content="Knapp"/>
           </StackPanel>
         </Button>
+       <Button Classes="change">
+          <StackPanel Orientation="Horizontal">
+            <Label Padding="0 5"/>
+            <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE3AA;" />
+          </StackPanel>
+        </Button>
+        
+       <Button Classes="delete">
+          <StackPanel Orientation="Horizontal">
+            <Label Padding="0 5"/>
+            <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE4A6;"/>
+          </StackPanel>
+        </Button>
+
+        </StackPanel>
     </Border>
   </Design.PreviewWith>
 
@@ -21,4 +37,28 @@
     <Setter Property="Padding" Value="15 10"/>
     <Setter Property="HorizontalAlignment" Value="Stretch"/>
   </Style>
+ <Style Selector="Button.change">
+  <Setter Property="Foreground" Value="{DynamicResource ChangeBrush}"/>
+  <Setter Property="FontSize" Value="20"/>
+  <Setter Property="Padding" Value="15 10"/>
+  <Setter Property="HorizontalAlignment" Value="Center"/>
+</Style>
+
+<Style Selector="Button.change Label">
+  <Setter Property="Foreground" Value="{DynamicResource ChangeBrush}"/>
+</Style>
+
+ <Style Selector="Button.delete">
+  <Setter Property="Foreground" Value="{DynamicResource DeleteBrush}"/>
+  <Setter Property="FontSize" Value="20"/>
+  <Setter Property="Padding" Value="15 10"/>
+  <Setter Property="HorizontalAlignment" Value="Center"/>
+</Style>
+
+<Style Selector="Button.delete Label">
+  <Setter Property="Foreground" Value="{DynamicResource DeleteBrush}"/>
+</Style>
+ 
+
+
 </Styles>
