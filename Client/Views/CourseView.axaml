@@ -12,12 +12,12 @@
              </Design.DataContext>
 <StackPanel>
                 <TextBlock Classes="pageTitle" Text="{Binding PageTitle}"/>
-<!-- 
+
                  <Button HorizontalAlignment="Left" Classes="button" MaxWidth="300" Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).GoToAddCourseCommand}">
       <StackPanel Orientation="Horizontal">
-        <Label Content="Lägg till lärare"/>
+        <Label Content="Lägg till kurs"/>
       </StackPanel>
-    </Button> -->
+    </Button>
 
                 <Border  BorderBrush="White" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
                     <Grid ColumnDefinitions="*,135,135,120,75,100" ShowGridLines="True">
@@ -46,7 +46,7 @@
                                     </Button>
 
                                     <Button Grid.Column="5" Classes="delete"
-                                      Command="{Binding $parent[ItemsControl].((vm:TeacherViewModel)DataContext).DeleteCommand}"
+                                      Command="{Binding $parent[ItemsControl].((vm:CourseViewModel)DataContext).DeleteCommand}"
                                       CommandParameter="{Binding _id}">
                                     <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE4A6;"/>
                                     </Button>
