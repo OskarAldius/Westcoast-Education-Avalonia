@@ -13,7 +13,7 @@ public class PageViewFactory : IPageViewFactory
         return page switch
         {
             PageViewEnum.Home => new HomeViewModel(),
-            PageViewEnum.Courses => new CourseViewModel(),
+            PageViewEnum.Courses => new CourseViewModel(new CourseService()),
             PageViewEnum.Students => new StudentViewModel(new StudentService()),
             PageViewEnum.Teachers => new TeacherViewModel(new TeacherService()),
             PageViewEnum.AddStudent => new AddStudentViewModel(),
