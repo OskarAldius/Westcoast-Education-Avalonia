@@ -19,20 +19,19 @@ public class TeacherService : ITeacherService
         var httpService = new HttpService<Teachers>();
         await httpService.Delete("teachers", id);
     }
-
-    public async Task<List<TeacherRestDb>> Find()
+    public async Task<List<TeacherRestDb>> List()
     {
         var httpService = new HttpService<TeacherRestDb>();
         return await httpService.Get("teachers");
     }
 
-    public async Task<List<Teachers>> List()
+    public async Task<TeacherRestDb> Find(string id)
     {
-        var httpService = new HttpService<Teachers>();
-        var teachers = await httpService.Get("teachers");
-
-        return teachers;
+        var httpService = new HttpService<TeacherRestDb>();
+        var searchCriteria = "{\"_id\":\"" + id + "\"}";
+        return await httpService.Get("teachers", searchCriteria);
     }
+
 
     public async Task Update(Teachers teachers, string _objectId)
     {

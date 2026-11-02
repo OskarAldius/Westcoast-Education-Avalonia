@@ -35,4 +35,14 @@ public partial class MainWindowViewModel : ViewModelBase
     private void GoToAddStudent() => CurrentView = _pageViewFactory.LoadPageViewModel(Enums.PageViewEnum.AddStudent);
     [RelayCommand]
     private void GoToAddTeacher() => CurrentView = _pageViewFactory.LoadPageViewModel(Enums.PageViewEnum.AddTeacher);
+
+
+
+    [RelayCommand]
+    private void GoToEditTeacher(string id)
+    {
+        var vm = (EditTeacherViewModel)_pageViewFactory.LoadPageViewModel(Enums.PageViewEnum.EditTeacher);
+        vm.Init(id);
+        CurrentView = vm;
+    }
 }

@@ -12,19 +12,23 @@ namespace Client.ViewModels;
 
 public partial class TeacherViewModel : ViewModelBase
 {
+    public string Id { get; set; }
     private readonly ITeacherService _teacherService;
+
     [ObservableProperty]
     public partial ObservableCollection<TeacherRestDb> Teachers { get; set; } = [];
     public TeacherViewModel()
     {
         _teacherService = new TeacherService();
         PageTitle = "Våra Lärare";
+        Id = "";
         Init();
     }
     public TeacherViewModel(ITeacherService teacherService)
     {
         _teacherService = teacherService;
         PageTitle = "Våra Lärare";
+        Id = "";
         Init();
     }
     private async void Init()
@@ -50,12 +54,11 @@ public partial class TeacherViewModel : ViewModelBase
     {
         try
         {
-            Teachers = new ObservableCollection<TeacherRestDb>(await _teacherService.Find());
+            Teachers = new ObservableCollection<TeacherRestDb>(await _teacherService.List());
         }
         catch (Exception ex)
         {
-
-            System.Console.WriteLine(ex.Message);
+            Console.WriteLine(ex.Message);
         }
     }
 }

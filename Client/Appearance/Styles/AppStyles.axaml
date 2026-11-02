@@ -22,7 +22,7 @@
     <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}"/>
 </Style>
 
-    <Style Selector="Label.form">
+    <Style Selector="Label.looks">
     <Setter Property="FontSize" Value="15"/>
     <Setter Property="Padding" Value="0 5" />
   </Style>
