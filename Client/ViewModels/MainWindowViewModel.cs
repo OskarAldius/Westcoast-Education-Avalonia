@@ -1,6 +1,7 @@
 using System;
 using Avalonia.Metadata;
 using Client.Factories;
+using Client.Interfaces;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -8,19 +9,21 @@ namespace Client.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    private readonly PageViewFactory _pageViewFactory;
-
+    private readonly IPageViewFactory _pageViewFactory;
     [ObservableProperty]
     public partial ViewModelBase CurrentView { get; set; } = new();
 
-    public MainWindowViewModel(PageViewFactory pageViewFactory)
+
+    public MainWindowViewModel(IPageViewFactory pageViewFactory)
     {
         _pageViewFactory = pageViewFactory;
         GoToHome();
     }
+
+    // Endast för previewern
     public MainWindowViewModel()
     {
-        _pageViewFactory = new PageViewFactory();
+        _pageViewFactory = null!;
     }
 
     [RelayCommand]
