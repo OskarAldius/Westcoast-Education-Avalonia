@@ -37,6 +37,12 @@
                             <Label Content="Studenter" />
                         </StackPanel>
                     </Button>
+                    <Button Classes="button" Command="{Binding GoToTeachersCommand}">
+                        <StackPanel Spacing="20" Orientation="Horizontal">
+                            <Label Padding="0 6" FontFamily="{DynamicResource IconFont}" Content="&#xE7BA;" />
+                            <Label Content="Lärare" />
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
                 
             </Grid>
