@@ -13,6 +13,12 @@
              <StackPanel>
                 <TextBlock Classes="pageTitle" Text="{Binding PageTitle}"/>
 
+                 <Button HorizontalAlignment="Left" Classes="button" MaxWidth="300" Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).GoToAddTeacherCommand}">
+      <StackPanel Orientation="Horizontal">
+        <Label Content="Lägg till lärare"/>
+      </StackPanel>
+    </Button>
+
                 <Border  BorderBrush="White" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
                     <Grid ColumnDefinitions="100,150,200,180,100,100" ShowGridLines="True">
                         <Label Content="Namn" />
