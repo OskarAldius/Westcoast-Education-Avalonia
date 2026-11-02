@@ -9,7 +9,7 @@ public interface ITeacherService
 {
     Task Add(Teachers teachers);
     Task Delete(string id);
-    Task<TeacherRestDb> Find(string fieldOfKnowledge);
+    Task<List<TeacherRestDb>> Find();
     Task<List<Teachers>> List();
     Task Update(Teachers teachers, string _objectId);
 }

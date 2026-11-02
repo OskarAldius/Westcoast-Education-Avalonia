@@ -20,12 +20,10 @@ public class TeacherService : ITeacherService
         await httpService.Delete("teachers", id);
     }
 
-    public async Task<TeacherRestDb> Find(string fieldOfKnowledge)
+    public async Task<List<TeacherRestDb>> Find()
     {
         var httpService = new HttpService<TeacherRestDb>();
-
-        var searchCriteria = "{\"fieldOfKnowledge\":" + "\"" + fieldOfKnowledge + "\"}";
-        return await httpService.Get("teachers", searchCriteria);
+        return await httpService.Get("teachers");
     }
 
     public async Task<List<Teachers>> List()

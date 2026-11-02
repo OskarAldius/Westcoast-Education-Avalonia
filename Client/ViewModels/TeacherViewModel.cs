@@ -14,8 +14,7 @@ public partial class TeacherViewModel : ViewModelBase
 {
     private readonly ITeacherService _teacherService;
     [ObservableProperty]
-    public partial ObservableCollection<Teachers> Teachers { get; set; } = [];
-
+    public partial ObservableCollection<TeacherRestDb> Teachers { get; set; } = [];
     public TeacherViewModel()
     {
         _teacherService = new TeacherService();
@@ -38,18 +37,12 @@ public partial class TeacherViewModel : ViewModelBase
     {
         try
         {
-
-            TeacherRestDb teachers = await _teacherService.Find(id);
-            if (teachers is not null)
-            {
-                await _teacherService.Delete(teachers._id);
-                await LoadTeachers();
-            }
+            await _teacherService.Delete(id);
+            await LoadTeachers();
         }
         catch (Exception ex)
         {
-
-            System.Console.WriteLine(ex.Message);
+            Console.WriteLine(ex.Message);
         }
     }
 
@@ -57,7 +50,7 @@ public partial class TeacherViewModel : ViewModelBase
     {
         try
         {
-            Teachers = new ObservableCollection<Teachers>(await _teacherService.List());
+            Teachers = new ObservableCollection<TeacherRestDb>(await _teacherService.Find());
         }
         catch (Exception ex)
         {
