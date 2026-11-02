@@ -25,8 +25,8 @@
                         <Label Grid.Column="1" Content="Efternamn"/>
                         <Label Grid.Column="2" Content="Telefonnummer"/>
                         <Label Grid.Column="3" Content="Kunskapsområde"/>
-                        <Label Grid.Column="4" Content="Ändra"/>
-                        <Label Grid.Column="5" Content="Ta bort"/>
+                        <Label Grid.Column="4" HorizontalAlignment="Center" Content="Ändra"/>
+                        <Label Grid.Column="5" HorizontalAlignment="Center" Content="Ta bort"/>
                     </Grid>
                 </Border>
                  <ScrollViewer Height="300">
@@ -38,8 +38,14 @@
                                     <Label Grid.Column="1" Content="{Binding LastName}"/>
                                     <Label Grid.Column="2" Content="{Binding PhoneNumber}"/>
                                     <Label Grid.Column="3" Content="{Binding FieldOfKnowledge}"/>
-                                    <Label Grid.Column="4" HorizontalAlignment="Right"/>
-                                    <Label Grid.Column="5" HorizontalAlignment="Right"/>
+                                    <Button Grid.Column="4" Classes="change">
+                                          <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE3AA;"/>
+                                    </Button>
+                                    <Button Grid.Column="5" Classes="delete"
+                                     Command="{Binding $parent[ItemsControl].((vm:TeacherViewModel)DataContext).DeleteCommand}"
+                                     CommandParameter="{Binding FieldOfKnowledge}">
+                                        <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE4A6;"/>
+                                    </Button>
                                     
                                 </Grid>
                             </DataTemplate>

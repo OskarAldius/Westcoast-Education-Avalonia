@@ -11,14 +11,14 @@
           </StackPanel>
         </Button>
        <Button Classes="change">
-          <StackPanel Orientation="Horizontal">
+          <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Label Padding="0 5"/>
             <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE3AA;" />
           </StackPanel>
         </Button>
         
        <Button Classes="delete">
-          <StackPanel Orientation="Horizontal">
+          <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Label Padding="0 5"/>
             <Label FontSize="35" FontFamily="{DynamicResource IconFont}" Content="&#xE4A6;"/>
           </StackPanel>
