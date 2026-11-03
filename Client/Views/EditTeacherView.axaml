@@ -13,7 +13,7 @@
 
              <StackPanel>
     <TextBlock Classes="pageTitle" Text="{Binding PageTitle}" />
-    <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="white" BorderThickness="0" Padding="0 30">
+    <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{DynamicResource DividerBrush}" BorderThickness="0" Padding="0 30">
       <!-- Huvud panelen  -->
       <StackPanel>
         <!-- Panel för inmatning samt bild -->

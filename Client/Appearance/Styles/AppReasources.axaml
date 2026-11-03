@@ -11,4 +11,8 @@
 <SolidColorBrush x:Key="ForegroundColor">#A7BDCF</SolidColorBrush>
 <SolidColorBrush x:Key="ChangeBrush">#1D8A3C</SolidColorBrush>
 <SolidColorBrush x:Key="DeleteBrush">#BC2214</SolidColorBrush>
+<SolidColorBrush x:Key="InputBackground">#26858E</SolidColorBrush>
+<SolidColorBrush x:Key="InputBorder">#21626F</SolidColorBrush>
+<SolidColorBrush x:Key="AccentBorder">#C5E9F3</SolidColorBrush>
+<SolidColorBrush x:Key="DividerBrush">#FFFFFF</SolidColorBrush>
 </ResourceDictionary>

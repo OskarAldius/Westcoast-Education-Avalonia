@@ -19,8 +19,8 @@
       </StackPanel>
     </Button>
 
-                <Border  BorderBrush="White" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
-                    <Grid ColumnDefinitions="*,135,135,120,75,100" ShowGridLines="True">
+                <Border  BorderBrush="{DynamicResource DividerBrush}" BorderThickness=" 0 0 0 1" Padding="0 50 0 5">
+                    <Grid ColumnDefinitions="*,135,135,120,75,100" ShowGridLines="False">
                         <Label Content="Title" />
                         <Label Grid.Column="1" Content="StartDatum"/>
                         <Label Grid.Column="2" Content="SlutDatum"/>
@@ -33,7 +33,7 @@
                     <ItemsControl ItemsSource="{Binding Courses}" Margin="0 10 0 0">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Grid ColumnDefinitions="*,135,135,120,75,100" ShowGridLines="True">
+                                <Grid ColumnDefinitions="*,135,135,120,75,100" ShowGridLines="False">
                                     <Label Content="{Binding Title}"/>
                                     <Label Grid.Column="1" Content="{Binding StartDate}"/>
                                     <Label Grid.Column="2" Content="{Binding EndDate}"/>

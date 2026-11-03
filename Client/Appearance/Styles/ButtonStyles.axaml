@@ -39,6 +39,7 @@
   </Style>
  <Style Selector="Button.change">
   <Setter Property="Foreground" Value="{DynamicResource ChangeBrush}"/>
+  <Setter Property="Background" Value="{DynamicResource Background}" />
   <Setter Property="FontSize" Value="20"/>
   <Setter Property="Padding" Value="15 10"/>
   <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -50,6 +51,8 @@
 
  <Style Selector="Button.delete">
   <Setter Property="Foreground" Value="{DynamicResource DeleteBrush}"/>
+    <Setter Property="Background" Value="{DynamicResource Background}" />
+
   <Setter Property="FontSize" Value="20"/>
   <Setter Property="Padding" Value="15 10"/>
   <Setter Property="HorizontalAlignment" Value="Center"/>

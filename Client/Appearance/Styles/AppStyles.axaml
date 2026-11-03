@@ -30,8 +30,8 @@
   <Style Selector="TextBox">
     <Setter Property="MaxWidth" Value="300" />
     <Setter Property="MinWidth" Value="300" />
-    <Setter Property="Background" Value="#26858E" />
-    <Setter Property="BorderBrush" Value="#21626F" />
+    <Setter Property="Background" Value="{DynamicResource InputBackground}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource InputBorder}" />
     <Setter Property="BorderThickness" Value="1" />
   </Style>
 
