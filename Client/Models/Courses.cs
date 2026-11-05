@@ -1,6 +1,6 @@
 using System;
 
-namespace Client.School;
+namespace Client.Models;
 
 public class Courses
 {

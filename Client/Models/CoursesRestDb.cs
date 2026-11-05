@@ -1,8 +1,8 @@
 using System;
 
-namespace Client.School;
+namespace Client.Models;
 
-public class TeacherRestDb : Teachers
+public class CoursesRestDb : Courses
 {
     public string _id { get; set; } = string.Empty;
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Client.Interfaces;
-using Client.School;
+using Client.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 

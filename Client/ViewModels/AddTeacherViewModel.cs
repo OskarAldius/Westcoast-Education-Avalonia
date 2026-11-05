@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Client.Interfaces;
-using Client.School;
+using Client.Models;
 using Client.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -41,16 +41,25 @@ public partial class AddTeacherViewModel : ViewModelBase
 
     private async Task Save()
     {
-        Teachers teacher = new()
+        try
         {
-            FirstName = FirstName,
-            LastName = LastName,
-            PhoneNumber = PhoneNumber,
-            FieldOfKnowledge = FieldOfKnowledge
+            Teachers teacher = new()
+            {
+                FirstName = FirstName,
+                LastName = LastName,
+                PhoneNumber = PhoneNumber,
+                FieldOfKnowledge = FieldOfKnowledge
 
-        };
-        await _teacherService.Add(teacher);
-        ClearData();
+            };
+            await _teacherService.Add(teacher);
+            ClearData();
+        }
+        catch (Exception ex)
+        {
+
+            System.Console.WriteLine(ex.Message);
+        }
+
     }
 
     private void ClearData()

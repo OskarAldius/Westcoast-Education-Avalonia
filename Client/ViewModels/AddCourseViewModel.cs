@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Client.Interfaces;
-using Client.School;
+using Client.Models;
 using Client.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -40,16 +40,25 @@ public partial class AddCourseViewModel : ViewModelBase
 
     private async Task Save()
     {
-        Courses courses = new()
+        try
         {
-            Title = Title,
-            StartDate = StartDate,
-            EndDate = EndDate,
-            CoursLength = CoursLength
+            Courses courses = new()
+            {
+                Title = Title,
+                StartDate = StartDate,
+                EndDate = EndDate,
+                CoursLength = CoursLength
 
-        };
-        await _courseService.Add(courses);
-        ClearData();
+            };
+            await _courseService.Add(courses);
+            ClearData();
+        }
+        catch (Exception ex)
+        {
+
+            System.Console.WriteLine(ex.Message);
+        }
+
     }
 
     private void ClearData()

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Client.School;
+using Client.Models;
 
 namespace Client.Interfaces;
 
