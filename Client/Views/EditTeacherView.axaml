@@ -39,7 +39,7 @@
         </StackPanel>
         <!-- Här kommer knapparna för att spara och avbryta hamna -->
         <StackPanel Spacing="20" Margin="0 30 0 0" Orientation="Horizontal" HorizontalAlignment="Center">
-          <Button Classes="form" Command="{Binding SaveCommand}">
+          <Button Classes="button" Command="{Binding SaveCommand}">
             <StackPanel Orientation="Horizontal">
               <Label Padding="5" FontFamily="{DynamicResource IconFont}" Content="&#xe248;" />
               <Label Content="Spara" />
